@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import historyImg from "@/assets/history-pickleball.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },

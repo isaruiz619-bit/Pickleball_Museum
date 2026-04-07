@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import popularityImg from "@/assets/popularity-pickleball.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
