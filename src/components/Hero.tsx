@@ -59,20 +59,6 @@ const Hero = () => {
         </motion.div>
 
         {/* Hero image card */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="mt-16 w-full max-w-4xl"
-        >
-          <div className="aspect-[16/9] rounded-lg overflow-hidden shadow-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=1200&q=80"
-              alt="Pickleball players in action"
-              className="w-full h-full object-cover"
-            />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
