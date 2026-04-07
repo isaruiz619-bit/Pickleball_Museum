@@ -46,7 +46,7 @@ const History = () => (
         >
           <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?auto=format&fit=crop&w=800&q=80"
+              src={historyImg}
               alt="Early pickleball origins"
               className="w-full h-full object-cover"
             />
