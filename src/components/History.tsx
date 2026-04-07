@@ -44,7 +44,7 @@ const History = () => (
           variants={fadeUp}
           className="order-1 md:order-2"
         >
-          <div className="aspect-[4/5] rounded-lg overflow-hidden shadow-lg">
+          <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
             <img
               src={historyImg}
               alt="Early pickleball origins"
