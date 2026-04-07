@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import popularityImg from "@/assets/popularity-pickleball.webp";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -28,8 +29,8 @@ const Popularity = () => (
         >
           <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
             <img
-              src="https://images.unsplash.com/photo-1643824346204-1a9c6c7cdbd3?auto=format&fit=crop&w=800&q=80"
-              alt="Pickleball popularity today"
+              src={popularityImg}
+              alt="Professional pickleball tournament"
               className="w-full h-full object-cover"
             />
           </div>
