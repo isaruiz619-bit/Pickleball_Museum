@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroCourt from "@/assets/hero-court.jpg";
 
 const Hero = () => {
   const scrollTo = (href: string) => {
