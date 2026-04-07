@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import heroCourt from "@/assets/hero-court.jpg";
 
 const Hero = () => {
   const scrollTo = (href: string) => {
@@ -10,8 +11,8 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1626178793926-22b28830aa30?auto=format&fit=crop&w=1920&q=80"
-          alt="Pickleball court floor"
+          src={heroCourt}
+          alt="Pickleball court overhead view"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-primary/70" />
