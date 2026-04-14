@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
+import gallery1 from "@/assets/gallery-1.webp";
+import gallery2 from "@/assets/gallery-2.webp";
+import gallery3 from "@/assets/gallery-3.jpg";
+import gallery4 from "@/assets/gallery-4.jpg";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1626178793599-6d59b9b4a95e?auto=format&fit=crop&w=600&q=80", alt: "Pickleball action shot 1" },
-  { src: "https://images.unsplash.com/photo-1626178793463-61f9c0eec220?auto=format&fit=crop&w=600&q=80", alt: "Pickleball paddle close-up" },
-  { src: "https://images.unsplash.com/photo-1626178793152-43b1d8d26e9d?auto=format&fit=crop&w=600&q=80", alt: "Pickleball court overhead" },
-  { src: "https://images.unsplash.com/photo-1643824346204-1a9c6c7cdbd3?auto=format&fit=crop&w=600&q=80", alt: "Pickleball community" },
+  { src: gallery1, alt: "Pickleball balls and paddle on court" },
+  { src: gallery2, alt: "Family playing pickleball in backyard" },
+  { src: gallery3, alt: "Professional pickleball player in action" },
+  { src: gallery4, alt: "Indoor pickleball facility with multiple courts" },
 ];
 
 const Gallery = () => (
