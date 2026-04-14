@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ExhibitHeader from "./ExhibitHeader";
 import historyImg from "@/assets/history-pickleball.webp";
 
 const fadeUp = {
@@ -7,33 +8,39 @@ const fadeUp = {
 };
 
 const History = () => (
-  <section id="history" className="py-24 md:py-32 bg-background">
-    <div className="container mx-auto px-6 lg:px-12">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={fadeUp}
-        className="text-center mb-16"
-      >
-        <p className="font-body text-sm uppercase tracking-[0.3em] text-secondary mb-3">Origins</p>
-        <h2 className="font-display text-4xl md:text-6xl text-primary">Where It All Began</h2>
-      </motion.div>
+  <section id="exhibit-1" className="py-24 md:py-32 bg-background scroll-mt-16">
+    <div className="container mx-auto px-6 lg:px-12 max-w-6xl">
+      <ExhibitHeader
+        number={1}
+        label="Origins"
+        title="Where It All Began"
+        hook="What if the most important invention of the summer happened by accident?"
+      />
 
-      <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-start">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
-          className="order-2 md:order-1"
+          className="order-2 md:order-1 space-y-6"
         >
-          <h3 className="font-display text-2xl md:text-3xl text-primary mb-6">A Backyard Invention</h3>
-          <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed mb-6">
-            In the summer of 1965, on Bainbridge Island, Washington, three fathers—Joel Pritchard, Bill Bell, and Barney McCallum—returned home to find their families bored on a Saturday afternoon. With a badminton court, a wiffle ball, and improvised wooden paddles, they created a game that would eventually sweep the nation.
-          </p>
+          <h3 className="font-display text-2xl md:text-3xl text-primary">A Backyard Invention</h3>
+
           <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed">
-            What began as a casual family pastime quickly grew into a structured sport. The founders lowered the net, established rules, and refined the equipment. By 1972, a corporation was formed to protect the sport, and the first known tournament was held in 1976. The game's accessibility—easy to learn but difficult to master—became its greatest strength.
+            It was the summer of 1965, and on Bainbridge Island, Washington, three fathers faced a problem every parent knows: their families were bored on a Saturday afternoon. Joel Pritchard, a congressman, had just returned from a round of golf with his friend Bill Bell to find their children sitting around with nothing to do.
+          </p>
+
+          <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed">
+            What happened next changed everything. The men found an old badminton court, but no one could locate a full set of rackets. Improvising with ping-pong paddles and a perforated plastic ball, they lowered the net and began to play. The game was awkward at first—but something clicked. Within hours, the entire family was hooked.
+          </p>
+
+          <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed">
+            Their neighbor, Barney McCallum, joined the next weekend and helped refine the rules. They crafted wooden paddles in his basement workshop. By the end of that summer, the game had a name—pickleball—and a growing group of devoted players. What began as a fix for boredom had become something none of them expected: the seed of a movement.
+          </p>
+
+          <p className="font-body text-base md:text-lg text-foreground/80 leading-relaxed">
+            By 1972, the founders saw enough demand to form Pickle-Ball, Inc., and in 1976 the first known tournament was held at the South Center Athletic Club in Tukwila, Washington. The game's greatest strength was already clear: it was easy to learn but endlessly difficult to master.
           </p>
         </motion.div>
 
@@ -45,12 +52,11 @@ const History = () => (
           className="order-1 md:order-2"
         >
           <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-            <img
-              src={historyImg}
-              alt="Early pickleball origins"
-              className="w-full h-full object-cover"
-            />
+            <img src={historyImg} alt="Early pickleball origins on Bainbridge Island" className="w-full h-full object-cover" />
           </div>
+          <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
+            The humble beginnings of pickleball — improvised equipment on a backyard court, 1965
+          </p>
         </motion.div>
       </div>
     </div>
