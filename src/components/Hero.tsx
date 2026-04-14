@@ -24,7 +24,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-primary-foreground leading-none tracking-wide"
+          className="font-display text-8xl sm:text-9xl md:text-[10rem] lg:text-[14rem] text-primary-foreground leading-none tracking-wide"
         >
           Pickleball
         </motion.h1>
@@ -49,12 +49,6 @@ const Hero = () => {
             className="px-8 py-3 bg-secondary text-secondary-foreground font-body text-sm uppercase tracking-widest rounded-sm hover:bg-orange-light transition-colors"
           >
             EXPLORE HISTORY
-          </button>
-          <button
-            onClick={() => scrollTo("#gallery")}
-            className="px-8 py-3 border border-primary-foreground/40 text-primary-foreground font-body text-sm uppercase tracking-widest rounded-sm hover:bg-primary-foreground/10 transition-colors"
-          >
-            VIEW GALLERY
           </button>
         </motion.div>
 
