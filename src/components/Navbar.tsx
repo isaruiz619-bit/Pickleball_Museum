@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-const navLinks = [
+const exhibits = [
   { label: "Home", href: "#home" },
-  { label: "History", href: "#history" },
-  { label: "Timeline", href: "#timeline" },
-  { label: "Popularity", href: "#popularity" },
-  { label: "Gallery", href: "#gallery" },
+  { label: "Exhibit 1: Origins", href: "#exhibit-1" },
+  { label: "Exhibit 2: Timeline", href: "#exhibit-2" },
+  { label: "Exhibit 3: The Surge", href: "#exhibit-3" },
+  { label: "Exhibit 4: Gallery", href: "#exhibit-4" },
+  { label: "Exhibit 5: Legacy", href: "#exhibit-5" },
 ];
 
 const Navbar = () => {
@@ -30,13 +31,13 @@ const Navbar = () => {
         </a>
 
         {/* Desktop */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((l) => (
+        <ul className="hidden lg:flex items-center gap-6">
+          {exhibits.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
                 onClick={(e) => { e.preventDefault(); handleClick(l.href); }}
-                className="font-body text-sm tracking-widest uppercase text-primary-foreground/80 hover:text-secondary transition-colors"
+                className="font-body text-[11px] tracking-widest uppercase text-primary-foreground/70 hover:text-secondary transition-colors"
               >
                 {l.label}
               </a>
@@ -46,7 +47,7 @@ const Navbar = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-primary-foreground"
+          className="lg:hidden text-primary-foreground"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
@@ -56,9 +57,9 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-primary border-t border-primary-foreground/10">
+        <div className="lg:hidden bg-primary border-t border-primary-foreground/10">
           <ul className="flex flex-col items-center gap-6 py-8">
-            {navLinks.map((l) => (
+            {exhibits.map((l) => (
               <li key={l.href}>
                 <a
                   href={l.href}
