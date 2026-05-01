@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ExhibitHeader from "./ExhibitHeader";
 import historyImg from "@/assets/history-pickleball.webp";
-import originsPaddles from "@/assets/origins-paddles.jpg";
+import originsPaddles from "@/assets/origins-pritchard-evans.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -63,10 +63,10 @@ const History = () => (
 
           <div>
             <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-              <img src={originsPaddles} alt="Handcrafted wooden pickleball paddles and perforated ball" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+              <img src={originsPaddles} alt="Co-inventor Congressman Joel Pritchard and former Governor Dan Evans preparing for a game" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
-              Handcrafted wooden paddles built in Barney McCallum's basement workshop
+              Co-inventor Congressman Joel Pritchard (left) and former Governor Dan Evans prepare for a game
             </p>
           </div>
         </motion.div>
