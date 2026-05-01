@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ExhibitHeader from "./ExhibitHeader";
 import historyImg from "@/assets/history-pickleball.webp";
+import originsPaddles from "@/assets/origins-paddles.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -49,14 +50,25 @@ const History = () => (
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
-          className="order-1 md:order-2"
+          className="order-1 md:order-2 space-y-8 md:sticky md:top-24"
         >
-          <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-            <img src={historyImg} alt="Early pickleball origins on Bainbridge Island" className="w-full h-full object-cover" />
+          <div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+              <img src={historyImg} alt="Early pickleball origins on Bainbridge Island" className="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
+              The humble beginnings of pickleball — improvised equipment on a backyard court, 1965
+            </p>
           </div>
-          <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
-            The humble beginnings of pickleball — improvised equipment on a backyard court, 1965
-          </p>
+
+          <div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+              <img src={originsPaddles} alt="Handcrafted wooden pickleball paddles and perforated ball" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+            </div>
+            <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
+              Handcrafted wooden paddles built in Barney McCallum's basement workshop
+            </p>
+          </div>
         </motion.div>
       </div>
     </div>
