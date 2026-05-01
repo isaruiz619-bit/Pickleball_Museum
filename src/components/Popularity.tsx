@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ExhibitHeader from "./ExhibitHeader";
 import popularityImg from "@/assets/popularity-pickleball.webp";
+import surgeCourts from "@/assets/surge-courts.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -30,13 +31,25 @@ const Popularity = () => (
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={fadeUp}
+          className="space-y-8"
         >
-          <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-            <img src={popularityImg} alt="Professional pickleball tournament in action" className="w-full h-full object-cover" />
+          <div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+              <img src={popularityImg} alt="Professional pickleball tournament in action" className="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
+              Professional pickleball tournaments now draw thousands of spectators and millions in sponsorship
+            </p>
           </div>
-          <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
-            Professional pickleball tournaments now draw thousands of spectators and millions in sponsorship
-          </p>
+
+          <div>
+            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+              <img src={surgeCourts} alt="Aerial view of a busy multi-court pickleball complex" className="w-full h-full object-cover" loading="lazy" width={1024} height={768} />
+            </div>
+            <p className="font-body text-xs text-muted-foreground mt-3 italic text-center">
+              Dedicated pickleball complexes are being built across the country to meet surging demand
+            </p>
+          </div>
         </motion.div>
 
         <motion.div
